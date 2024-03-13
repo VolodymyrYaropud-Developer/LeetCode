@@ -24,18 +24,8 @@ namespace LeetCode
             var res = new ListNode();
             while (l1 != null)
             {
-                var temp = l1.val + l1.val;
-                if (temp <= 9)
-                {
-                    res.val = temp;
-                }
-                else
-                {
-                    res.val = temp - 9;
-                    temp -= 9;
-                    res.next 
-                    res.val = temp;
-                }
+                var temp = l1.val + l1.val; //[9,9,9,9,9,9,9] 
+                res.val = temp;
                 l1 = l1.next;
                 l2 = l2.next;
             }
